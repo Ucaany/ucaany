@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Fauzan Al Anshari - Portofolio Web</title>
+    <script src="assets/js/vendors/color-modes.js"></script>
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg" />
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/aos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/odometer.css" />
+    <link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/vendors/carouselTicker.css" />
+    <link rel="stylesheet" href="assets/fonts/bootstrap-icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/fonts/boxicons/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/brands.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/solid.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+
+<body class="magic-cursor">
+    <div class="follower">
+    </div>
+    <div class="cursor">
+        <span class="dot"></span>
+    </div> <!--Preloader-->
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="rays justify-content-center align-items-center d-flex"></div>
+            </div>
+        </div>
+    </div>
+    <!--Preloader-end -->
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar custom-container navbar-light start-50 translate-middle-x navbar-expand-lg py-0 mt-lg-4 mt-3 z-5 tcmenu__wrap">
+            <div class="d-flex p-3 p-lg-0 justify-content-between align-items-center w-100">
+                <!--Logo-->
+                <a class="navbar-brand ms-lg-4 d-flex main-logo" href="index.html">
+                    <img src="assets/imgs/logo/favicon.svg" alt="inexa" />
+                    <span class="text-dark">Ucaany</span>
+                </a>
+                <div class="tcmenu__navbar-wrap tcmenu__main-menu d-none d-lg-flex">
+                    <ul class="navbar-nav me-auto gap-4 align-items-lg-center navigation">
+                        <li class="nav-item dropdown menu-item-has-children">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="get-quote.html">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center me-lg-4 gap-4">
+                    <div class="dark-light-switcher d-flex justify-content-center align-items-center">
+                        <i class="bi theme-icon bi-sun-fill"></i>
+                        <i class="bi theme-icon bi-moon-stars-fill"></i>
+                    </div>
+
+                    <a href="get-quote.html" class="menu-tigger btn btn-outline-secondary d-none d-md-block"> Let’s Talk </a>
+                    <!--Mobile-->
+                    <div class="mobile-nav-toggler  d-lg-none rounded-circle bg-primary icon-shape icon-lg">
+                        <img src="assets/imgs/icon/dot-menu.png" alt="inexa" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- prettier-ignore -->
+        <!-- Mobile Menu  -->
+        <div class="tcmobile__menu">
+            <nav class="tcmobile__menu-box">
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <div class="nav-logo">
+                    <a class="navbar-brand ms-lg-4 d-flex main-logo" href="index.html">
+                        <img src="assets/imgs/logo/favicon.svg" alt="inexa" />
+                        <span class="text-dark">Inexa</span>
+                    </a>
+                </div>
+                <div class="tcmobile__menu-outer"></div>
+
+                
+
+                <div class="tcmobile__menu-bottom">
+                    <div class="contact-info">
+                        <ul class="list-wrap list-unstyled">
+                            <li><a href="mailto:ucaany@gmail.com">ucaany@gmail.com</a></li>
+                            <li><a href="tel:8983704013">+62 898 3704 013</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <ul class="list-wrap">
+                            <li>
+                                <a href="https://www.facebook.com/" class=" text-reset">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" class=" text-reset">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" class=" text-reset">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" class=" text-reset">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="tcmobile__menu-backdrop"></div>
+        <!-- End Mobile Menu -->
+
+        <div class="offCanvas__overly"></div>
+        <!-- offCanvas-menu -->
+        <!-- Offcanvas menu -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
+            <div class="offcanvas-header">
+                <div class="offcanvas-close">
+                    <button class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="offCanvas__logo mb-3">
+                    <a class="navbar-brand ms-lg-4 d-flex main-logo me-8" href="index.html">
+                        <img src="assets/imgs/logo/favicon.svg" alt="inexa" />
+                        <span class="text-dark">Fauzan Al Anshari</span>
+                    </a>
+                </div>
+                <div class="offCanvas__side-info mb-4">
+                    <div class="contact-list mb-4">
+                        <h4>Address</h4>
+                        <p>
+                            Bantul, Sewon <br />
+                            DI. Yogyakarta - Indonesia
+                        </p>
+                    </div>
+                    <div class="contact-list mb-4">
+                        <h4>Phone Number</h4>
+                        <p>+62 898 3704 013</p>
+                    </div>
+                    <div class="contact-list mb-4">
+                        <h4>Email Address</h4>
+                        <p>ucaany@gmail.com</p>
+                        <p>contact@ucan.com</p>
+                    </div>
+                </div>
+                <div class="offCanvas__social-icon mt-30">
+                    <h6 class="text-secondary">Follow me:</h6>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Offcanvas menu -->
+
+    </header>
+
+    <main>
+        <!--Home 1 Section 1-->
+        <section class="home1_section1 position-relative bg-secondary-1 overflow-hidden">
+            <div class="scroll-move-left positon-relative">
+                <div class="text-move">
+                    <div class="d-flex gap-4">
+                        <p class="stroke_light_lg lh-1 wow img-custom-anim-left opacity-75">Videografer</p>
+                        <p class="stroke_light_lg lh-1 wow img-custom-anim-left opacity-75">Content Creator</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-move-right">
+                <p class="stroke_dark_lg dark-green lh-1 wow img-custom-anim-right">Fauzan Al Anshari</p>
+            </div>
+            <div class="container position-relative">
+                <div class="text-end pt-5 position-absolute bottom-0 end-0" data-aos="zoom-in">
+                    <div class="parallax-item">
+                        <img src="assets/imgs/human/human-1.png" alt="inexa" />
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between container position-absolute top-40 start-50 translate-middle">
+                <div class="text-start position-absoluteq top-40 start-0" data-aos="fade-up">
+                    <p class="fs-5 text-dark scroll-move-up">Editor Video | Videografer</p>
+                    <p class="fs-5 fw-bold text-dark scroll-move-up">Based in Yogyakarta, Indonesia</p>
+                </div>
+                <div class="position-absolute top-40 end-0" data-aos="fade-up">
+                    <div class="hover-up">
+                        <a href="https://drive.google.com/drive/folders/17plDU6so9jIrMGZdT1illIBc5WdU5Sf_?usp=sharing" class="btn btn-primary scroll-zoom-out">Download CV Portofolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Home 1 Section 2-->
+        <section class="home1_section2 section-padding overflow-x-hidden">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 wow img-custom-anim-top mb-5 mb-lg-0">
+                        <div class=" d-inline-flex position-relative">
+                            <div class="zoom-img rounded-4 mw-500">
+                                <div class="effect-curtain">
+                                    <div class="parallax-item">
+                                        <img src="assets/imgs/human/img-3.png" class="firstImg " alt="inexa" />
+                                    </div>
+                                    <img src="assets/imgs/human/img-2.png" class="secondImg" alt="inexa" />
+                                    <img src="assets/imgs/human/img-2.png" class="thirdImg" alt="inexa" />
+                                </div>
+                            </div>
+                            <div class="position-absolute bottom-0 start-100 translate-middle-x mb-5 bg-white icon_160 icon-shape rounded-circle shadow">
+                                <img class="position-relative" src="assets/imgs/icon/badge-icon.png" alt="inexa" />
+                                <div class="position-absolute top-50 start-50 translate-middle w-75">
+                                    <img class="ribbonRotate dark-reverse" src="assets/imgs/icon/badge-text.png" alt="inexa" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow img-custom-anim-left">
+                        <div class="text-primary fw-normal fs-7 text-uppercase text-decoration-underline">About Me!</div>
+                        <h1 class="fw-bold ds-5 border-bottom pb-4 mt-4">
+                            Video Editor <br class="d-none d-lg-block" />
+                            & Content Creator
+                        </h1>
+                        <p class="mt-4">I'am Fauzan Al Anshari, a video editor who produces visuals with innovative and interactive communication. Video Editor based in Yogyakarta, Indonesia </p> Currently in college with more than 2 years of experience as a video editor. Mastering the use of Adobe family video editing and design applications: Adobe Premiere Pro, Adobe Lighroom. Also mastered editing applications such as Canva, VN, CapCut. First winner of the video making competition with the theme “Developing Information and Technology Business” from the Ministry of Law and Human Rights of the Republic of Indonesia in 2022</p>     
+                    </div>
+                </div>
+            </div>
+            <div class="pt-120 position-relative wow img-custom-anim-left overflow-x-hidden">
+                <div class="d-flex gap-5 scroll-move-left">
+                    <p class="stroke_light_xl me-5">Instagram</p>
+                    <p class="stroke_light_xl me-5">Linkedin</p>
+                    <p class="stroke_light_xl me-5">Youtube</p>
+                </div>
+                <div class="product_item d-inline-flex position-absolute bottom-50 start-50">
+                    <div class="border bg-white p-2 rounded-start-pill d-flex align-items-center rounded-end-pill text-center card-lift">
+                        <div class="ms-1">
+                            <p class="text-uppercase mb-0 fs-7">Followers</p>
+                            <h3 class="mb-0 ms-3">2,196</h3>
+                        </div>
+                        <div class="icon-shape icon_80 ms-5 rounded-circle bg-secondary-1  bg-custom-1">
+                            <img class="dark-reverse" src="assets/imgs/icon/be.png" alt="inexa" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Home 1 Section 3-->
+        <section class="home1_section3 pb-120 overflow-hidden">
+            <div class="container">
+                <div class="text-primary fw-normal fs-7 text-uppercase text-decoration-underline"><span class="scroll-move-up">Expertise</span></div>
+                <div id="accordion">
+                    <div class="card mb-4 p-3 border-0">
+                        <div class="wow img-custom-anim-right">
+                            <a class="collapsed text-dark fw-bold" data-bs-toggle="collapse" href="#collapseOne">
+                                <span class="service-item d-flex align-items-center w-100 line-underline">
+                                    <img src="assets/imgs/icon/up-arrow.png" alt="inexa" />
+                                    <span class="lh-sm">Editor</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div class="row mt-5 align-items-center card-body">
+                                <div class="col-lg-6">
+                                    <div class="zoom-img d-inline-flex rounded-4">
+                                        <img src="assets/imgs/services/service-3.png" alt="inexa" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ps-lg-4">
+                                    <h1 class="ds-6">Video Editor</h1>
+                                    <p class="pe-5 mb-5">
+                                        Collect, create assets and sort image recording files into one Collecting, Assetizing and Sorting Image Recording Files into 1 whole video with Ideas and stories into visuals.
+
+                                        <p>Able to produce Instagram Reels, Short Youtube and Movie videos with mature Production. With Adobe Family Software (Premiere Pro, After Effect), Davinci, and Capcut Desktop.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 p-3 border-0">
+                        <div class="wow img-custom-anim-right">
+                            <a class="collapsed text-dark fw-bold" data-bs-toggle="collapse" href="#collapseTwo">
+                                <span class="service-item d-flex align-items-center line-underline">
+                                    <img src="assets/imgs/icon/up-arrow.png" alt="inexa" />
+                                    <span class="lh-sm">Videografer</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                            <div class="row mt-5 align-items-center card-body">
+                                <div class="col-lg-6">
+                                    <div class="zoom-img d-inline-flex rounded-4">
+                                        <img src="assets/imgs/services/service-0.png" alt="inexa" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ps-lg-4">
+                                    <h1 class="ds-6">Videografer</h1>
+                                    <p class="pe-5 mb-5">
+                                        Shoot in the field, collaborating with the client. 
+                                        Ensure that all shots and briefs are fulfilled in accordance with the schedule of events or the time specified.
+
+                                        Able to Operate Tools, Professional Cameras (Dslr, mirrorless) Gimbal and other Supporting Tools. And sensitive to the situation in the field
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4 p-3 border-0">
+                        <div class="wow img-custom-anim-right">
+                            <a class="collapsed text-dark fw-bold" data-bs-toggle="collapse" href="#collapseFour">
+                                <span class="service-item d-flex align-items-center line-underline">
+                                    <img src="assets/imgs/icon/up-arrow.png" alt="inexa" />
+                                    <span>Design Grafis</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                            <div class="row mt-5 align-items-center card-body">
+                                <div class="col-lg-6">
+                                    <div class="zoom-img d-inline-flex rounded-4">
+                                        <img src="assets/imgs/services/service-2.png" alt="inexa" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ps-lg-4">
+                                    <h1 class="ds-6">Design Grafis</h1>
+                                    <p class="pe-5 mb-5">
+                                        Working on Instagram feeds, collecting and aligning post designs according to the predetermined color palette and brief.
+
+                                        <p>Ensure the content of the design is useful and has CTA and Heading. Using Canva software to create presentations as well as some designs such as client Instagram feeds.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Home 1 Section 4-->
+        <section class="home1_section4 section-padding bg-secondary-1">
+            <div class="text-center">
+                <div class="text-primary fw-normal fs-7 text-uppercase text-decoration-underline">portfolio</div>
+                <h1>Featured works</h1>
+            </div>
+            <div class="container">
+                <div class="row mt-5 align-items-center bg-white p-5 rounded-4 shadow">
+                    <div class="col-lg-6 wow img-custom-anim-left pb-5 pb-lg-0">
+                        <div class="zoom-img d-inline-flex rounded-4">
+                            <div class="parallax-item">
+                                <img src="assets/imgs/img-feature.png" alt="inexa" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5 wow img-custom-anim-top">
+                        <img src="assets/imgs/icon/google.png" alt="inexa" />
+                        <h1 class="ds-6">AI Fitness App Companion UI</h1>
+                        <p class="pe-5 mb-5">
+                            You may also realize cost savings from your energy efficient choices in your custom home. Federal tax credits for some green materials can allow you to deduct
+                            as much.
+                        </p>
+                        <a href="portfolio-details.html" class="btn btn-outline-secondary fs-7">Case Details</a>
+                    </div>
+                </div>
+                <div class="mt-5 pt-5 gap-4 d-flex flex-md-row flex-column align-items-center justify-content-center wow img-custom-anim-right">
+                    <h5 class="mb-0">More featured works here:</h5>
+                    <a href="https://www.behance.net" class="btn btn-outline-secondary fs-7 hover-up" target="_blank">
+                        <span class="text-primary me-2">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </span>
+                        Linkedin
+                    </a>
+                    <a href="https://dribbble.com" class="btn btn-outline-secondary fs-7 hover-up" target="_blank">
+                        <span class="text-primary me-2">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                        Instagram   
+                    </a>
+                    <a href="https://github.com" class="btn btn-outline-secondary fs-7 hover-up" target="_blank">
+                        <span class="text-primary me-2">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        Youtube
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!--Home 1 Section 6-->
+        <section class="home1_section6 pt-120 bg-black position-relative bg-custom-2">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-3 wow img-custom-anim-left">
+                        <div class="text-primary fw-normal fs-7 text-uppercase text-decoration-underline">Client</div>
+                        <h1 class="fw-bold ds-5 text-white mb-lg-0 mb-5">Some of My Projects</h1>
+                    </div>
+                    <div class="col-lg-6 wow img-custom-anim-left">
+                        <p class="mb-0 w-80">
+                            Involved in several projects, video reels, short film production, design and talent in this end. See complete, connect to me soon
+                        </p>
+                    </div>
+                    <div class="col-lg-3 tex-lg-end mt-4">
+                        <a href="get-quote.html" class="btn btn-outline-dark text-white wow img-custom-anim-left">Get In Touch</a>
+                    </div>
+                    <div class="col-lg-9 offset-lg-3">
+                        <div class="row mt-5">
+                            <div class="col-lg-6 wow img-custom-anim-left">
+                                <div class="awards border-top border-secondary border-bottom py-4 position-relative">
+                                    <p>Editor Remote - 2025</p>
+                                    <h3 class="text-white">Cerita Beda Hak Sama</h3>
+                                    <p>You may also realize cost savings from your energy efficient choices in your custom home.</p>
+                                
+                                </div>
+                            </div>
+                            <div class="col-lg-6 wow img-custom-anim-left">
+                                <div class="awards border-top border-secondary border-bottom py-4 position-relative">
+                                    <p>Editor, Talent - 2025</p>
+                                    <h3 class="text-white">Narasi Yogyakarta</h3>
+                                    <p>You may also realize cost savings from your energy efficient choices in your custom home.</p>
+                                
+                                </div>
+                            </div>
+                            <div class="col-lg-6 wow img-custom-anim-left">
+                                <div class="awards border-top border-secondary border-bottom py-4 position-relative">
+                                    <p>Editor Video - 2025</p>
+                                    <h3 class="text-white">PT. Tuxu Entertainment</h3>
+                                    <p>You may also realize cost savings from your energy efficient choices in your custom home.</p>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 wow img-custom-anim-left">
+                                <div class="awards border-top border-secondary border-bottom py-4 position-relative">
+                                    <p>Back End Dev - 2025</p>
+                                    <h3 class="text-white">Sewon Screening #11</h3>
+                                    <p>You may also realize cost savings from your energy efficient choices in your custom home.</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row overflow-hidden">
+                    <p class="stroke_dark lh-1 text-capitalize wow img-custom-anim-left">Awards</p>
+                </div>
+            </div>
+            <div class="video-home-1 position-absolute start-0 wow img-custom-anim-top">
+                <img src="assets/imgs/video/bg-video.png" alt="about" class="img-fluid" />
+                <a href="https://www.youtube.com/watch?v=-A_nKGpIjVs" class="play-btn popup-video position-absolute top-50 start-50 translate-middle icon-shape icon-xl rounded-circle text-primary">
+                    <i class="bi bi-play-fill"></i>
+                </a>
+            </div>
+        </section>
+
+        <!--Home 1 Section 7-->
+        <section class="home1_section7 pt-650 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="w-md-75 ms-lg-8 wow img-custom-anim-left">
+                            <div class="text-primary fw-normal fs-7 text-uppercase text-decoration-underline">contact me</div>
+                            <h1 class="fw-bold ds-5 mt-4">Have any question? Get in touch!</h1>
+                            <p class="mb-5">Reach out and let's make it happen ✨. I'm also available for full-time or Part-time opportunities to push the boundaries of design and deliver exceptional work.</p>
+                            <a href="tel:+12345678900" class="d-flex align-items-start mb-3 text-secondary"> <i class="bi bi-telephone-fill text-dark me-3"></i>+62 898 3704 013 </a>
+                            <a href="mailto:ucaany@gmail.com" class="d-flex align-items-start mb-3 text-secondary"> <i class="bi bi-envelope-open-fill me-3 text-dark"></i>ucaany@gmail.com </a>
+                            <a href="https://www.google.com/maps" class="d-flex align-items-start mb-3 text-secondary">
+                                <i class="bi bi-geo-alt-fill me-3 text-dark"></i>Sewon Bantul,<br />DI Yogyakarta, Indonesia
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-home1 bg-secondary-1 pt-120 overflow-x-hidden" data-background="assets/imgs/background/pattern.png">
+            <div class="container">
+                <div class="text-primary fw-normal fs-7 text-uppercase text-decoration-underline wow img-custom-anim-left">Let's Work Together! </div>
+                <div class="position-relative">
+                    <h1 class="fs-170 text-black pb-5 mt-2 wow img-custom-anim-left">ucaany@gmail.com</h1>
+                    <div class="badge position-absolute top-0 translate-middle-y bg-white icon_160 icon-shape rounded-circle shadow">
+                        <img src="assets/imgs/icon/email.png" alt="inexa" />
+                        <div class="position-absolute top-50 start-50 translate-middle w-75">
+                            <img class="ribbonRotate dark-reverse" src="assets/imgs/icon/badge-text.png" alt="inexa" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex shadow rounded-start-4 rounded-end-4 border overflow-hidden">
+                            <a href="https://www.instagram.com/ucaany" target="_blank" class="border-0 border-start border-end d-flex align-items-center btn btn-outline-secondary text-start w-100 rounded-0 fs-7">
+                                Instagram
+                                <i class="fa-brands fa-instagram ms-auto"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ucaanyy/" target="_blank" class="border-0 border-start border-end d-flex align-items-center btn btn-outline-secondary text-start w-100 rounded-0 fs-7">
+                                Linkedin
+                                <i class="fa-brands fa-linkedin ms-auto"></i>
+                            </a>
+                                                        <a href="https://fastwork.id/user/ucaany?source=web_marketplace_profile-menu_profile" target="_blank" class="border-0 border-start border-end d-flex align-items-center btn btn-outline-secondary text-start w-100 rounded-0 fs-7">
+                                FastWork
+                                <i class="fa-brands fa-dribbble ms-auto"></i>
+                            </a>
+                            <a href="https://www.youtube.com" target="_blank" class="border-0 border-start border-end d-flex align-items-center btn btn-outline-secondary text-start w-100 rounded-0 fs-7">
+                                Youtube
+                                <i class="fa-brands fa-youtube ms-auto"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-secondary py-4">
+                    <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center">
+                        <div class="d-flex gap-4">
+                            <a href="#" class="fw-bold"> Careers </a>
+                            <a href="faq.html" class="fw-bold">FAQ </a>
+                            <a href="get-quote.html" class="fw-bold">Contact </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center">
+                        <div class="small">
+                            Copyright & Design By
+                            <span class="text-secondary"><a class="text-dark fw-bold" href="https://alithemes.com">Fauzan Al Ansahri</a> - 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll top -->
+    <div class="btn-scroll-top">
+        <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+            <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+        </svg>
+    </div>
+    <!-- Libs JS -->
+    <script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/aos.js"></script>
+    <script src="assets/js/vendors/wow.min.js"></script>
+    <script src="assets/js/vendors/jquery.appear.js"></script>
+    <script src="assets/js/vendors/jquery.odometer.min.js"></script>
+    <script src="assets/js/vendors/headhesive.min.js"></script>
+    <script src="assets/js/vendors/smart-stick-nav.js"></script>
+    <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/vendors/gsap.min.js"></script>
+    <script src="assets/js/vendors/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendors/custom-cursor.js"></script>
+    <script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+    <script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+ 
+    <!-- Theme JS -->
+    <script src="assets/js/gsap-custom.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Other scripts -->
+</body>
+
+</html>
